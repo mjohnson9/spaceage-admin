@@ -15,7 +15,7 @@ do
 		if engine and engine.RealFrameTime then
 			FrameTime = engine.RealFrameTime
 			betterFrameTime = true
-		else if game and game.GetFrameTimeReal then
+		elseif game and game.GetFrameTimeReal then
 			FrameTime = game.GetFrameTimeReal
 			betterFrameTime = true
 		end
