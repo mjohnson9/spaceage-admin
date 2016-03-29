@@ -2,6 +2,6 @@
 
 set -e
 
-find lua -type f -iname '*.lua' | while read filepath; do
+find . -type f -iname '*.lua' -not -iwholename '*.git*' | while read filepath; do
 	luac5.1 -p -- "${filepath}"
 done
