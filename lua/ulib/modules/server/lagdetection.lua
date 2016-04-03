@@ -4,7 +4,6 @@
 -- cache global variables
 local FrameTime = FrameTime
 local MsgC = MsgC
-local SysTime = SysTime
 
 -- attempt to use gmsv_fps
 local betterFrameTime = false
