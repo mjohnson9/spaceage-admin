@@ -13,7 +13,7 @@ local PLAYER = FindMetaTable("Player")
 function PLAYER:IsRestricted()
 	local hasAccess = ULib.ucl.query(self, permissionName)
 	if not hasAccess then
-		return false
+		return true
 	end
 
 	-- if it's any value other than zero, the player isn't restricted
