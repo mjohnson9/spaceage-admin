@@ -4,8 +4,6 @@
 -- cache global variables
 local FrameTime = FrameTime
 local MsgC = MsgC
-local MsgN = MsgN
-local SysTime = SysTime
 
 -- attempt to use gmsv_fps
 local betterFrameTime = false
@@ -83,7 +81,6 @@ end
 
 timer.Simple(5, function()
 	-- wait until we've spawned everything
-	lastFrame = SysTime() -- update lastFrame to now so that we don't get an initial long frame warning
 	hook.Add("Think", "LagDetect", checkForLag)
 	MsgC(successColor, "[LagDetect] Started\n")
 end)
